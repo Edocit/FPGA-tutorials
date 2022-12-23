@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sat Dec 24 00:44:15 2022
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : clocked_cnt
+Top-level Entity Name : CLOCKED_CNT
+Family : MAX 10
+Total logic elements : 122
+    Total combinational functions : 118
+    Dedicated logic registers : 69
+Total registers : 69
+Total pins : 11
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

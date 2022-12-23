@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD>
+<TITLE>Analysis &amp; Synthesis Messages</TITLE>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="jquery-ui/1.10.2/css/smoothness/jquery-ui-1.10.2.custom.min.css">
+<link rel="stylesheet" type="text/css" href="jquery-layout/1.3.0.rc30.79/jquery.layout-1.3.0.rc30.79.css">
+<link rel="stylesheet" type="text/css" href="css/override.css">
+
+<script type="text/javascript" src="jquery/1.11.3/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="jquery-ui/1.10.2/js/jquery-ui-1.10.2.custom.min.js"></script>
+<script type="text/javascript" src="jquery-layout/1.3.0.rc30.79/jquery.layout-1.3.0.rc30.79.min.js"></script>
+
+
+</HEAD>
+
+<BODY>
+<div class="messages"><ul><li class="info_message">Info: *******************************************************************</li><li class="info_message">Info: Running Quartus Prime Analysis &amp; Synthesis<ul><li class="info_message">Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition</li><li class="info_message">Info: Processing started: Mon Dec 12 11:42:25 2022</li></ul></li><li class="info_message">Info: Command: quartus_map --read_settings_files=on --write_settings_files=off hex_driver -c hex_driver</li><li class="info_message">Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected</li><li class="info_message">Info (12021): Found 2 design units, including 1 entities, in source file hex_driver.vhdl<ul><li class="info_message">Info (12022): Found design unit 1: HEX_DRIVER-BHV File: /home/edocit/hex_driver/hex_driver.vhdl Line: 18</li><li class="info_message">Info (12023): Found entity 1: HEX_DRIVER File: /home/edocit/hex_driver/hex_driver.vhdl Line: 11</li></ul></li><li class="info_message">Info (12127): Elaborating entity &quot;hex_driver&quot; for the top level hierarchy</li><li class="warning_message">Warning (13024): Output pins are stuck at VCC or GND<ul><li class="warning_message">Warning (13410): Pin &quot;dislay_v[0]&quot; is stuck at VCC File: /home/edocit/hex_driver/hex_driver.vhdl Line: 13</li></ul></li><li class="info_message">Info (286030): Timing-Driven Synthesis is running</li><li class="info_message">Info (16010): Generating hard_block partition &quot;hard_block:auto_generated_inst&quot;<ul><li class="info_message">Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL</li></ul></li><li class="warning_message">Warning (21074): Design contains 4 input pin(s) that do not drive logic<ul><li class="warning_message">Warning (15610): No output dependent on input pin &quot;addr[4]&quot; File: /home/edocit/hex_driver/hex_driver.vhdl Line: 12</li><li class="warning_message">Warning (15610): No output dependent on input pin &quot;addr[5]&quot; File: /home/edocit/hex_driver/hex_driver.vhdl Line: 12</li><li class="warning_message">Warning (15610): No output dependent on input pin &quot;addr[6]&quot; File: /home/edocit/hex_driver/hex_driver.vhdl Line: 12</li><li class="warning_message">Warning (15610): No output dependent on input pin &quot;addr[7]&quot; File: /home/edocit/hex_driver/hex_driver.vhdl Line: 12</li></ul></li><li class="info_message">Info (21057): Implemented 23 device resources after synthesis - the final resource count might be different<ul><li class="info_message">Info (21058): Implemented 8 input pins</li><li class="info_message">Info (21059): Implemented 8 output pins</li><li class="info_message">Info (21061): Implemented 7 logic cells</li></ul></li><li class="info_message">Info: Quartus Prime Analysis &amp; Synthesis was successful. 0 errors, 7 warnings<ul><li class="info_message">Info: Peak virtual memory: 422 megabytes</li><li class="info_message">Info: Processing ended: Mon Dec 12 11:42:33 2022</li><li class="info_message">Info: Elapsed time: 00:00:08</li><li class="info_message">Info: Total CPU time (on all processors): 00:00:19</li></ul></li></ul></div>
+
+<noscript>JavaScript must be enabled to view the report.</noscript>
+</BODY>
+</HTML>

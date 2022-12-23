@@ -1,0 +1,17 @@
+vsim -i -l msim_transcript work.cnt_tb
+# vsim -i -l msim_transcript work.cnt_tb 
+# Start time: 19:40:46 on Dec 21,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.cnt_tb(bhv)
+# Loading work.cnt(bhv)
+add wave -position end sim:/cnt_tb/*
+add wave -position end sim:/cnt_tb/cnt_0/*
+run
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 185 ns  Iteration: 0  Instance: /cnt_tb/cnt_0
+# End time: 19:44:19 on Dec 21,2022, Elapsed time: 0:03:33
+# Errors: 0, Warnings: 7

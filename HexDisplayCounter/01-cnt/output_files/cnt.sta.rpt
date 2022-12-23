@@ -1,0 +1,1106 @@
+Timing Analyzer report for cnt
+Wed Dec 21 19:38:44 2022
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Slow 1200mV 85C Model Setup Summary
+  7. Slow 1200mV 85C Model Hold Summary
+  8. Slow 1200mV 85C Model Recovery Summary
+  9. Slow 1200mV 85C Model Removal Summary
+ 10. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 11. Slow 1200mV 85C Model Metastability Summary
+ 12. Slow 1200mV 0C Model Fmax Summary
+ 13. Slow 1200mV 0C Model Setup Summary
+ 14. Slow 1200mV 0C Model Hold Summary
+ 15. Slow 1200mV 0C Model Recovery Summary
+ 16. Slow 1200mV 0C Model Removal Summary
+ 17. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 18. Slow 1200mV 0C Model Metastability Summary
+ 19. Fast 1200mV 0C Model Setup Summary
+ 20. Fast 1200mV 0C Model Hold Summary
+ 21. Fast 1200mV 0C Model Recovery Summary
+ 22. Fast 1200mV 0C Model Removal Summary
+ 23. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 24. Fast 1200mV 0C Model Metastability Summary
+ 25. Multicorner Timing Analysis Summary
+ 26. Board Trace Model Assignments
+ 27. Input Transition Times
+ 28. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 29. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 30. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 31. Setup Transfers
+ 32. Hold Transfers
+ 33. Report TCCS
+ 34. Report RSKM
+ 35. Unconstrained Paths Summary
+ 36. Clock Status Summary
+ 37. Unconstrained Input Ports
+ 38. Unconstrained Output Ports
+ 39. Unconstrained Input Ports
+ 40. Unconstrained Output Ports
+ 41. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                              ;
+; Revision Name         ; cnt                                                 ;
+; Device Family         ; MAX 10                                              ;
+; Device Name           ; 10M50DAF484C7G                                      ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Combined                                            ;
+; Rise/Fall Delays      ; Enabled                                             ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.03        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   1.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------+
+; Clocks                                                                         ;
++--------------------------------------------------------------------------------+
+Clock Name  : clk
+Type        : Base
+Period      : 1.000
+Frequency   : 1000.0 MHz
+Rise        : 0.000
+Fall        : 0.500
+Duty Cycle  : 
+Divide by   : 
+Multiply by : 
+Phase       : 
+Offset      : 
+Edge List   : 
+Edge Shift  : 
+Inverted    : 
+Master      : 
+Source      : 
+Targets     : { clk }
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                             ;
++--------------------------------------------------------------------------------+
+Fmax            : 242.95 MHz
+Restricted Fmax : 242.95 MHz
+Clock Name      : clk
+Note            : 
++--------------------------------------------------------------------------------+
+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup Summary                                            ;
++--------------------------------------------------------------------------------+
+Clock         : clk
+Slack         : -3.116
+End Point TNS : -97.669
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold Summary                                             ;
++--------------------------------------------------------------------------------+
+Clock         : clk
+Slack         : 0.640
+End Point TNS : 0.000
++--------------------------------------------------------------------------------+
+
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary                              ;
++--------------------------------------------------------------------------------+
+Clock         : clk
+Slack         : -3.000
+End Point TNS : -53.508
++--------------------------------------------------------------------------------+
+
+
+
+-----------------------------------------------
+; Slow 1200mV 85C Model Metastability Summary ;
+-----------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                              ;
++--------------------------------------------------------------------------------+
+Fmax            : 262.26 MHz
+Restricted Fmax : 250.0 MHz
+Clock Name      : clk
+Note            : limit due to minimum period restriction (max I/O toggle rate)
++--------------------------------------------------------------------------------+
+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup Summary                                             ;
++--------------------------------------------------------------------------------+
+Clock         : clk
+Slack         : -2.813
+End Point TNS : -87.535
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold Summary                                              ;
++--------------------------------------------------------------------------------+
+Clock         : clk
+Slack         : 0.591
+End Point TNS : 0.000
++--------------------------------------------------------------------------------+
+
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary                               ;
++--------------------------------------------------------------------------------+
+Clock         : clk
+Slack         : -3.000
+End Point TNS : -53.508
++--------------------------------------------------------------------------------+
+
+
+
+----------------------------------------------
+; Slow 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup Summary                                             ;
++--------------------------------------------------------------------------------+
+Clock         : clk
+Slack         : -0.672
+End Point TNS : -19.715
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold Summary                                              ;
++--------------------------------------------------------------------------------+
+Clock         : clk
+Slack         : 0.248
+End Point TNS : 0.000
++--------------------------------------------------------------------------------+
+
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary                               ;
++--------------------------------------------------------------------------------+
+Clock         : clk
+Slack         : -3.000
+End Point TNS : -40.024
++--------------------------------------------------------------------------------+
+
+
+
+----------------------------------------------
+; Fast 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++--------------------------------------------------------------------------------+
+Clock               : Worst-case Slack
+Setup               : -3.116
+Hold                : 0.248
+Recovery            : N/A
+Removal             : N/A
+Minimum Pulse Width : -3.000
+
+Clock               :  clk
+Setup               : -3.116
+Hold                : 0.248
+Recovery            : N/A
+Removal             : N/A
+Minimum Pulse Width : -3.000
+
+Clock               : Design-wide TNS
+Setup               : -97.669
+Hold                : 0.0
+Recovery            : 0.0
+Removal             : 0.0
+Minimum Pulse Width : -53.508
+
+Clock               :  clk
+Setup               : -97.669
+Hold                : 0.000
+Recovery            : N/A
+Removal             : N/A
+Minimum Pulse Width : -53.508
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                  ;
++--------------------------------------------------------------------------------+
+Pin                     : cnt_out[0]
+I/O Standard            : 2.5 V
+Near Tline Length       : 0 in
+Near Tline L per Length : 0 H/in
+Near Tline C per Length : 0 F/in
+Near Series R           : short
+Near Differential R     : -
+Near Pull-up R          : open
+Near Pull-down R        : open
+Near C                  : open
+Far Tline Length        : 0 in
+Far Tline L per Length  : 0 H/in
+Far Tline C per Length  : 0 F/in
+Far Series R            : short
+Far Pull-up R           : open
+Far Pull-down R         : open
+Far C                   : open
+Termination Voltage     : 0 V
+Far Differential R      : -
+EBD File Name           : n/a
+EBD Signal Name         : n/a
+EBD Far-end             : n/a
+
+Pin                     : cnt_out[1]
+I/O Standard            : 2.5 V
+Near Tline Length       : 0 in
+Near Tline L per Length : 0 H/in
+Near Tline C per Length : 0 F/in
+Near Series R           : short
+Near Differential R     : -
+Near Pull-up R          : open
+Near Pull-down R        : open
+Near C                  : open
+Far Tline Length        : 0 in
+Far Tline L per Length  : 0 H/in
+Far Tline C per Length  : 0 F/in
+Far Series R            : short
+Far Pull-up R           : open
+Far Pull-down R         : open
+Far C                   : open
+Termination Voltage     : 0 V
+Far Differential R      : -
+EBD File Name           : n/a
+EBD Signal Name         : n/a
+EBD Far-end             : n/a
+
+Pin                     : cnt_out[2]
+I/O Standard            : 2.5 V
+Near Tline Length       : 0 in
+Near Tline L per Length : 0 H/in
+Near Tline C per Length : 0 F/in
+Near Series R           : short
+Near Differential R     : -
+Near Pull-up R          : open
+Near Pull-down R        : open
+Near C                  : open
+Far Tline Length        : 0 in
+Far Tline L per Length  : 0 H/in
+Far Tline C per Length  : 0 F/in
+Far Series R            : short
+Far Pull-up R           : open
+Far Pull-down R         : open
+Far C                   : open
+Termination Voltage     : 0 V
+Far Differential R      : -
+EBD File Name           : n/a
+EBD Signal Name         : n/a
+EBD Far-end             : n/a
+
+Pin                     : cnt_out[3]
+I/O Standard            : 2.5 V
+Near Tline Length       : 0 in
+Near Tline L per Length : 0 H/in
+Near Tline C per Length : 0 F/in
+Near Series R           : short
+Near Differential R     : -
+Near Pull-up R          : open
+Near Pull-down R        : open
+Near C                  : open
+Far Tline Length        : 0 in
+Far Tline L per Length  : 0 H/in
+Far Tline C per Length  : 0 F/in
+Far Series R            : short
+Far Pull-up R           : open
+Far Pull-down R         : open
+Far C                   : open
+Termination Voltage     : 0 V
+Far Differential R      : -
+EBD File Name           : n/a
+EBD Signal Name         : n/a
+EBD Far-end             : n/a
+
+Pin                     : ~ALTERA_TDO~
+I/O Standard            : 2.5 V
+Near Tline Length       : 0 in
+Near Tline L per Length : 0 H/in
+Near Tline C per Length : 0 F/in
+Near Series R           : short
+Near Differential R     : -
+Near Pull-up R          : open
+Near Pull-down R        : open
+Near C                  : open
+Far Tline Length        : 0 in
+Far Tline L per Length  : 0 H/in
+Far Tline C per Length  : 0 F/in
+Far Series R            : short
+Far Pull-up R           : open
+Far Pull-down R         : open
+Far C                   : open
+Termination Voltage     : 0 V
+Far Differential R      : -
+EBD File Name           : n/a
+EBD Signal Name         : n/a
+EBD Far-end             : n/a
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Input Transition Times                                                         ;
++--------------------------------------------------------------------------------+
+Pin             : clk
+I/O Standard    : 2.5 V
+10-90 Rise Time : 2000 ps
+90-10 Fall Time : 2000 ps
+
+Pin             : en
+I/O Standard    : 2.5 V
+10-90 Rise Time : 2000 ps
+90-10 Fall Time : 2000 ps
+
+Pin             : rst
+I/O Standard    : 2.5 V
+10-90 Rise Time : 2000 ps
+90-10 Fall Time : 2000 ps
+
+Pin             : ~ALTERA_TMS~
+I/O Standard    : 2.5 V Schmitt Trigger
+10-90 Rise Time : 2000 ps
+90-10 Fall Time : 2000 ps
+
+Pin             : ~ALTERA_TCK~
+I/O Standard    : 2.5 V Schmitt Trigger
+10-90 Rise Time : 2000 ps
+90-10 Fall Time : 2000 ps
+
+Pin             : ~ALTERA_TDI~
+I/O Standard    : 2.5 V Schmitt Trigger
+10-90 Rise Time : 2000 ps
+90-10 Fall Time : 2000 ps
+
+Pin             : ~ALTERA_CONFIG_SEL~
+I/O Standard    : 2.5 V
+10-90 Rise Time : 2000 ps
+90-10 Fall Time : 2000 ps
+
+Pin             : ~ALTERA_nCONFIG~
+I/O Standard    : 2.5 V Schmitt Trigger
+10-90 Rise Time : 2000 ps
+90-10 Fall Time : 2000 ps
+
+Pin             : ~ALTERA_nSTATUS~
+I/O Standard    : 2.5 V Schmitt Trigger
+10-90 Rise Time : 2000 ps
+90-10 Fall Time : 2000 ps
+
+Pin             : ~ALTERA_CONF_DONE~
+I/O Standard    : 2.5 V Schmitt Trigger
+10-90 Rise Time : 2000 ps
+90-10 Fall Time : 2000 ps
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                ;
++--------------------------------------------------------------------------------+
+Pin                                  : cnt_out[0]
+I/O Standard                         : 2.5 V
+Board Delay on Rise                  : 0 s
+Board Delay on Fall                  : 0 s
+Steady State Voh at FPGA Pin         : 2.32 V
+Steady State Vol at FPGA Pin         : 8.25e-09 V
+Voh Max at FPGA Pin                  : 2.41 V
+Vol Min at FPGA Pin                  : -0.0871 V
+Ringback Voltage on Rise at FPGA Pin : 0.291 V
+Ringback Voltage on Fall at FPGA Pin : 0.138 V
+10-90 Rise Time at FPGA Pin          : 3.15e-10 s
+90-10 Fall Time at FPGA Pin          : 4.16e-10 s
+Monotonic Rise at FPGA Pin           : No
+Monotonic Fall at FPGA Pin           : Yes
+Steady State Voh at Far-end          : 2.32 V
+Steady State Vol at Far-end          : 8.25e-09 V
+Voh Max at Far-end                   : 2.41 V
+Vol Min at Far-end                   : -0.0871 V
+Ringback Voltage on Rise at Far-end  : 0.291 V
+Ringback Voltage on Fall at Far-end  : 0.138 V
+10-90 Rise Time at Far-end           : 3.15e-10 s
+90-10 Fall Time at Far-end           : 4.16e-10 s
+Monotonic Rise at Far-end            : No
+Monotonic Fall at Far-end            : Yes
+
+Pin                                  : cnt_out[1]
+I/O Standard                         : 2.5 V
+Board Delay on Rise                  : 0 s
+Board Delay on Fall                  : 0 s
+Steady State Voh at FPGA Pin         : 2.32 V
+Steady State Vol at FPGA Pin         : 8.25e-09 V
+Voh Max at FPGA Pin                  : 2.41 V
+Vol Min at FPGA Pin                  : -0.0859 V
+Ringback Voltage on Rise at FPGA Pin : 0.289 V
+Ringback Voltage on Fall at FPGA Pin : 0.136 V
+10-90 Rise Time at FPGA Pin          : 3.15e-10 s
+90-10 Fall Time at FPGA Pin          : 4.16e-10 s
+Monotonic Rise at FPGA Pin           : No
+Monotonic Fall at FPGA Pin           : Yes
+Steady State Voh at Far-end          : 2.32 V
+Steady State Vol at Far-end          : 8.25e-09 V
+Voh Max at Far-end                   : 2.41 V
+Vol Min at Far-end                   : -0.0859 V
+Ringback Voltage on Rise at Far-end  : 0.289 V
+Ringback Voltage on Fall at Far-end  : 0.136 V
+10-90 Rise Time at Far-end           : 3.15e-10 s
+90-10 Fall Time at Far-end           : 4.16e-10 s
+Monotonic Rise at Far-end            : No
+Monotonic Fall at Far-end            : Yes
+
+Pin                                  : cnt_out[2]
+I/O Standard                         : 2.5 V
+Board Delay on Rise                  : 0 s
+Board Delay on Fall                  : 0 s
+Steady State Voh at FPGA Pin         : 2.32 V
+Steady State Vol at FPGA Pin         : 8.25e-09 V
+Voh Max at FPGA Pin                  : 2.41 V
+Vol Min at FPGA Pin                  : -0.0871 V
+Ringback Voltage on Rise at FPGA Pin : 0.291 V
+Ringback Voltage on Fall at FPGA Pin : 0.138 V
+10-90 Rise Time at FPGA Pin          : 3.15e-10 s
+90-10 Fall Time at FPGA Pin          : 4.16e-10 s
+Monotonic Rise at FPGA Pin           : No
+Monotonic Fall at FPGA Pin           : Yes
+Steady State Voh at Far-end          : 2.32 V
+Steady State Vol at Far-end          : 8.25e-09 V
+Voh Max at Far-end                   : 2.41 V
+Vol Min at Far-end                   : -0.0871 V
+Ringback Voltage on Rise at Far-end  : 0.291 V
+Ringback Voltage on Fall at Far-end  : 0.138 V
+10-90 Rise Time at Far-end           : 3.15e-10 s
+90-10 Fall Time at Far-end           : 4.16e-10 s
+Monotonic Rise at Far-end            : No
+Monotonic Fall at Far-end            : Yes
+
+Pin                                  : cnt_out[3]
+I/O Standard                         : 2.5 V
+Board Delay on Rise                  : 0 s
+Board Delay on Fall                  : 0 s
+Steady State Voh at FPGA Pin         : 2.32 V
+Steady State Vol at FPGA Pin         : 8.25e-09 V
+Voh Max at FPGA Pin                  : 2.41 V
+Vol Min at FPGA Pin                  : -0.0859 V
+Ringback Voltage on Rise at FPGA Pin : 0.289 V
+Ringback Voltage on Fall at FPGA Pin : 0.136 V
+10-90 Rise Time at FPGA Pin          : 3.15e-10 s
+90-10 Fall Time at FPGA Pin          : 4.16e-10 s
+Monotonic Rise at FPGA Pin           : No
+Monotonic Fall at FPGA Pin           : Yes
+Steady State Voh at Far-end          : 2.32 V
+Steady State Vol at Far-end          : 8.25e-09 V
+Voh Max at Far-end                   : 2.41 V
+Vol Min at Far-end                   : -0.0859 V
+Ringback Voltage on Rise at Far-end  : 0.289 V
+Ringback Voltage on Fall at Far-end  : 0.136 V
+10-90 Rise Time at Far-end           : 3.15e-10 s
+90-10 Fall Time at Far-end           : 4.16e-10 s
+Monotonic Rise at Far-end            : No
+Monotonic Fall at Far-end            : Yes
+
+Pin                                  : ~ALTERA_TDO~
+I/O Standard                         : 2.5 V
+Board Delay on Rise                  : 0 s
+Board Delay on Fall                  : 0 s
+Steady State Voh at FPGA Pin         : 2.32 V
+Steady State Vol at FPGA Pin         : 1.39e-08 V
+Voh Max at FPGA Pin                  : 2.39 V
+Vol Min at FPGA Pin                  : -0.0407 V
+Ringback Voltage on Rise at FPGA Pin : 0.211 V
+Ringback Voltage on Fall at FPGA Pin : 0.121 V
+10-90 Rise Time at FPGA Pin          : 4.7e-10 s
+90-10 Fall Time at FPGA Pin          : 5.93e-10 s
+Monotonic Rise at FPGA Pin           : No
+Monotonic Fall at FPGA Pin           : Yes
+Steady State Voh at Far-end          : 2.32 V
+Steady State Vol at Far-end          : 1.39e-08 V
+Voh Max at Far-end                   : 2.39 V
+Vol Min at Far-end                   : -0.0407 V
+Ringback Voltage on Rise at Far-end  : 0.211 V
+Ringback Voltage on Fall at Far-end  : 0.121 V
+10-90 Rise Time at Far-end           : 4.7e-10 s
+90-10 Fall Time at Far-end           : 5.93e-10 s
+Monotonic Rise at Far-end            : No
+Monotonic Fall at Far-end            : Yes
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                               ;
++--------------------------------------------------------------------------------+
+Pin                                  : cnt_out[0]
+I/O Standard                         : 2.5 V
+Board Delay on Rise                  : 0 s
+Board Delay on Fall                  : 0 s
+Steady State Voh at FPGA Pin         : 2.32 V
+Steady State Vol at FPGA Pin         : 1.16e-06 V
+Voh Max at FPGA Pin                  : 2.37 V
+Vol Min at FPGA Pin                  : -0.0508 V
+Ringback Voltage on Rise at FPGA Pin : 0.153 V
+Ringback Voltage on Fall at FPGA Pin : 0.187 V
+10-90 Rise Time at FPGA Pin          : 4.63e-10 s
+90-10 Fall Time at FPGA Pin          : 4.49e-10 s
+Monotonic Rise at FPGA Pin           : Yes
+Monotonic Fall at FPGA Pin           : Yes
+Steady State Voh at Far-end          : 2.32 V
+Steady State Vol at Far-end          : 1.16e-06 V
+Voh Max at Far-end                   : 2.37 V
+Vol Min at Far-end                   : -0.0508 V
+Ringback Voltage on Rise at Far-end  : 0.153 V
+Ringback Voltage on Fall at Far-end  : 0.187 V
+10-90 Rise Time at Far-end           : 4.63e-10 s
+90-10 Fall Time at Far-end           : 4.49e-10 s
+Monotonic Rise at Far-end            : Yes
+Monotonic Fall at Far-end            : Yes
+
+Pin                                  : cnt_out[1]
+I/O Standard                         : 2.5 V
+Board Delay on Rise                  : 0 s
+Board Delay on Fall                  : 0 s
+Steady State Voh at FPGA Pin         : 2.32 V
+Steady State Vol at FPGA Pin         : 1.16e-06 V
+Voh Max at FPGA Pin                  : 2.37 V
+Vol Min at FPGA Pin                  : -0.049 V
+Ringback Voltage on Rise at FPGA Pin : 0.154 V
+Ringback Voltage on Fall at FPGA Pin : 0.186 V
+10-90 Rise Time at FPGA Pin          : 4.63e-10 s
+90-10 Fall Time at FPGA Pin          : 4.5e-10 s
+Monotonic Rise at FPGA Pin           : Yes
+Monotonic Fall at FPGA Pin           : Yes
+Steady State Voh at Far-end          : 2.32 V
+Steady State Vol at Far-end          : 1.16e-06 V
+Voh Max at Far-end                   : 2.37 V
+Vol Min at Far-end                   : -0.049 V
+Ringback Voltage on Rise at Far-end  : 0.154 V
+Ringback Voltage on Fall at Far-end  : 0.186 V
+10-90 Rise Time at Far-end           : 4.63e-10 s
+90-10 Fall Time at Far-end           : 4.5e-10 s
+Monotonic Rise at Far-end            : Yes
+Monotonic Fall at Far-end            : Yes
+
+Pin                                  : cnt_out[2]
+I/O Standard                         : 2.5 V
+Board Delay on Rise                  : 0 s
+Board Delay on Fall                  : 0 s
+Steady State Voh at FPGA Pin         : 2.32 V
+Steady State Vol at FPGA Pin         : 1.16e-06 V
+Voh Max at FPGA Pin                  : 2.37 V
+Vol Min at FPGA Pin                  : -0.0508 V
+Ringback Voltage on Rise at FPGA Pin : 0.153 V
+Ringback Voltage on Fall at FPGA Pin : 0.187 V
+10-90 Rise Time at FPGA Pin          : 4.63e-10 s
+90-10 Fall Time at FPGA Pin          : 4.49e-10 s
+Monotonic Rise at FPGA Pin           : Yes
+Monotonic Fall at FPGA Pin           : Yes
+Steady State Voh at Far-end          : 2.32 V
+Steady State Vol at Far-end          : 1.16e-06 V
+Voh Max at Far-end                   : 2.37 V
+Vol Min at Far-end                   : -0.0508 V
+Ringback Voltage on Rise at Far-end  : 0.153 V
+Ringback Voltage on Fall at Far-end  : 0.187 V
+10-90 Rise Time at Far-end           : 4.63e-10 s
+90-10 Fall Time at Far-end           : 4.49e-10 s
+Monotonic Rise at Far-end            : Yes
+Monotonic Fall at Far-end            : Yes
+
+Pin                                  : cnt_out[3]
+I/O Standard                         : 2.5 V
+Board Delay on Rise                  : 0 s
+Board Delay on Fall                  : 0 s
+Steady State Voh at FPGA Pin         : 2.32 V
+Steady State Vol at FPGA Pin         : 1.16e-06 V
+Voh Max at FPGA Pin                  : 2.37 V
+Vol Min at FPGA Pin                  : -0.049 V
+Ringback Voltage on Rise at FPGA Pin : 0.154 V
+Ringback Voltage on Fall at FPGA Pin : 0.186 V
+10-90 Rise Time at FPGA Pin          : 4.63e-10 s
+90-10 Fall Time at FPGA Pin          : 4.5e-10 s
+Monotonic Rise at FPGA Pin           : Yes
+Monotonic Fall at FPGA Pin           : Yes
+Steady State Voh at Far-end          : 2.32 V
+Steady State Vol at Far-end          : 1.16e-06 V
+Voh Max at Far-end                   : 2.37 V
+Vol Min at Far-end                   : -0.049 V
+Ringback Voltage on Rise at Far-end  : 0.154 V
+Ringback Voltage on Fall at Far-end  : 0.186 V
+10-90 Rise Time at Far-end           : 4.63e-10 s
+90-10 Fall Time at Far-end           : 4.5e-10 s
+Monotonic Rise at Far-end            : Yes
+Monotonic Fall at Far-end            : Yes
+
+Pin                                  : ~ALTERA_TDO~
+I/O Standard                         : 2.5 V
+Board Delay on Rise                  : 0 s
+Board Delay on Fall                  : 0 s
+Steady State Voh at FPGA Pin         : 2.32 V
+Steady State Vol at FPGA Pin         : 1.97e-06 V
+Voh Max at FPGA Pin                  : 2.36 V
+Vol Min at FPGA Pin                  : -0.0174 V
+Ringback Voltage on Rise at FPGA Pin : 0.144 V
+Ringback Voltage on Fall at FPGA Pin : 0.094 V
+10-90 Rise Time at FPGA Pin          : 6.44e-10 s
+90-10 Fall Time at FPGA Pin          : 7.22e-10 s
+Monotonic Rise at FPGA Pin           : No
+Monotonic Fall at FPGA Pin           : Yes
+Steady State Voh at Far-end          : 2.32 V
+Steady State Vol at Far-end          : 1.97e-06 V
+Voh Max at Far-end                   : 2.36 V
+Vol Min at Far-end                   : -0.0174 V
+Ringback Voltage on Rise at Far-end  : 0.144 V
+Ringback Voltage on Fall at Far-end  : 0.094 V
+10-90 Rise Time at Far-end           : 6.44e-10 s
+90-10 Fall Time at Far-end           : 7.22e-10 s
+Monotonic Rise at Far-end            : No
+Monotonic Fall at Far-end            : Yes
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                ;
++--------------------------------------------------------------------------------+
+Pin                                  : cnt_out[0]
+I/O Standard                         : 2.5 V
+Board Delay on Rise                  : 0 s
+Board Delay on Fall                  : 0 s
+Steady State Voh at FPGA Pin         : 2.62 V
+Steady State Vol at FPGA Pin         : 9.94e-08 V
+Voh Max at FPGA Pin                  : 2.78 V
+Vol Min at FPGA Pin                  : -0.0444 V
+Ringback Voltage on Rise at FPGA Pin : 0.25 V
+Ringback Voltage on Fall at FPGA Pin : 0.107 V
+10-90 Rise Time at FPGA Pin          : 2.67e-10 s
+90-10 Fall Time at FPGA Pin          : 2.75e-10 s
+Monotonic Rise at FPGA Pin           : No
+Monotonic Fall at FPGA Pin           : Yes
+Steady State Voh at Far-end          : 2.62 V
+Steady State Vol at Far-end          : 9.94e-08 V
+Voh Max at Far-end                   : 2.78 V
+Vol Min at Far-end                   : -0.0444 V
+Ringback Voltage on Rise at Far-end  : 0.25 V
+Ringback Voltage on Fall at Far-end  : 0.107 V
+10-90 Rise Time at Far-end           : 2.67e-10 s
+90-10 Fall Time at Far-end           : 2.75e-10 s
+Monotonic Rise at Far-end            : No
+Monotonic Fall at Far-end            : Yes
+
+Pin                                  : cnt_out[1]
+I/O Standard                         : 2.5 V
+Board Delay on Rise                  : 0 s
+Board Delay on Fall                  : 0 s
+Steady State Voh at FPGA Pin         : 2.62 V
+Steady State Vol at FPGA Pin         : 9.95e-08 V
+Voh Max at FPGA Pin                  : 2.78 V
+Vol Min at FPGA Pin                  : -0.0452 V
+Ringback Voltage on Rise at FPGA Pin : 0.248 V
+Ringback Voltage on Fall at FPGA Pin : 0.108 V
+10-90 Rise Time at FPGA Pin          : 2.67e-10 s
+90-10 Fall Time at FPGA Pin          : 2.75e-10 s
+Monotonic Rise at FPGA Pin           : No
+Monotonic Fall at FPGA Pin           : Yes
+Steady State Voh at Far-end          : 2.62 V
+Steady State Vol at Far-end          : 9.95e-08 V
+Voh Max at Far-end                   : 2.78 V
+Vol Min at Far-end                   : -0.0452 V
+Ringback Voltage on Rise at Far-end  : 0.248 V
+Ringback Voltage on Fall at Far-end  : 0.108 V
+10-90 Rise Time at Far-end           : 2.67e-10 s
+90-10 Fall Time at Far-end           : 2.75e-10 s
+Monotonic Rise at Far-end            : No
+Monotonic Fall at Far-end            : Yes
+
+Pin                                  : cnt_out[2]
+I/O Standard                         : 2.5 V
+Board Delay on Rise                  : 0 s
+Board Delay on Fall                  : 0 s
+Steady State Voh at FPGA Pin         : 2.62 V
+Steady State Vol at FPGA Pin         : 9.94e-08 V
+Voh Max at FPGA Pin                  : 2.78 V
+Vol Min at FPGA Pin                  : -0.0444 V
+Ringback Voltage on Rise at FPGA Pin : 0.25 V
+Ringback Voltage on Fall at FPGA Pin : 0.107 V
+10-90 Rise Time at FPGA Pin          : 2.67e-10 s
+90-10 Fall Time at FPGA Pin          : 2.75e-10 s
+Monotonic Rise at FPGA Pin           : No
+Monotonic Fall at FPGA Pin           : Yes
+Steady State Voh at Far-end          : 2.62 V
+Steady State Vol at Far-end          : 9.94e-08 V
+Voh Max at Far-end                   : 2.78 V
+Vol Min at Far-end                   : -0.0444 V
+Ringback Voltage on Rise at Far-end  : 0.25 V
+Ringback Voltage on Fall at Far-end  : 0.107 V
+10-90 Rise Time at Far-end           : 2.67e-10 s
+90-10 Fall Time at Far-end           : 2.75e-10 s
+Monotonic Rise at Far-end            : No
+Monotonic Fall at Far-end            : Yes
+
+Pin                                  : cnt_out[3]
+I/O Standard                         : 2.5 V
+Board Delay on Rise                  : 0 s
+Board Delay on Fall                  : 0 s
+Steady State Voh at FPGA Pin         : 2.62 V
+Steady State Vol at FPGA Pin         : 9.95e-08 V
+Voh Max at FPGA Pin                  : 2.78 V
+Vol Min at FPGA Pin                  : -0.0452 V
+Ringback Voltage on Rise at FPGA Pin : 0.248 V
+Ringback Voltage on Fall at FPGA Pin : 0.108 V
+10-90 Rise Time at FPGA Pin          : 2.67e-10 s
+90-10 Fall Time at FPGA Pin          : 2.75e-10 s
+Monotonic Rise at FPGA Pin           : No
+Monotonic Fall at FPGA Pin           : Yes
+Steady State Voh at Far-end          : 2.62 V
+Steady State Vol at Far-end          : 9.95e-08 V
+Voh Max at Far-end                   : 2.78 V
+Vol Min at Far-end                   : -0.0452 V
+Ringback Voltage on Rise at Far-end  : 0.248 V
+Ringback Voltage on Fall at Far-end  : 0.108 V
+10-90 Rise Time at Far-end           : 2.67e-10 s
+90-10 Fall Time at Far-end           : 2.75e-10 s
+Monotonic Rise at Far-end            : No
+Monotonic Fall at Far-end            : Yes
+
+Pin                                  : ~ALTERA_TDO~
+I/O Standard                         : 2.5 V
+Board Delay on Rise                  : 0 s
+Board Delay on Fall                  : 0 s
+Steady State Voh at FPGA Pin         : 2.62 V
+Steady State Vol at FPGA Pin         : 1.68e-07 V
+Voh Max at FPGA Pin                  : 2.73 V
+Vol Min at FPGA Pin                  : -0.0396 V
+Ringback Voltage on Rise at FPGA Pin : 0.362 V
+Ringback Voltage on Fall at FPGA Pin : 0.108 V
+10-90 Rise Time at FPGA Pin          : 3.11e-10 s
+90-10 Fall Time at FPGA Pin          : 4.42e-10 s
+Monotonic Rise at FPGA Pin           : No
+Monotonic Fall at FPGA Pin           : Yes
+Steady State Voh at Far-end          : 2.62 V
+Steady State Vol at Far-end          : 1.68e-07 V
+Voh Max at Far-end                   : 2.73 V
+Vol Min at Far-end                   : -0.0396 V
+Ringback Voltage on Rise at Far-end  : 0.362 V
+Ringback Voltage on Fall at Far-end  : 0.108 V
+10-90 Rise Time at Far-end           : 3.11e-10 s
+90-10 Fall Time at Far-end           : 4.42e-10 s
+Monotonic Rise at Far-end            : No
+Monotonic Fall at Far-end            : Yes
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Setup Transfers                                                                ;
++--------------------------------------------------------------------------------+
+From Clock : clk
+To Clock   : clk
+RR Paths   : 1428
+FR Paths   : 0
+RF Paths   : 0
+FF Paths   : 0
++--------------------------------------------------------------------------------+
+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++--------------------------------------------------------------------------------+
+; Hold Transfers                                                                 ;
++--------------------------------------------------------------------------------+
+From Clock : clk
+To Clock   : clk
+RR Paths   : 1428
+FR Paths   : 0
+RF Paths   : 0
+FF Paths   : 0
++--------------------------------------------------------------------------------+
+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++--------------------------------------------------------------------------------+
+; Unconstrained Paths Summary                                                    ;
++--------------------------------------------------------------------------------+
+Property : Illegal Clocks
+Setup    : 0
+Hold     : 0
+
+Property : Unconstrained Clocks
+Setup    : 0
+Hold     : 0
+
+Property : Unconstrained Input Ports
+Setup    : 2
+Hold     : 2
+
+Property : Unconstrained Input Port Paths
+Setup    : 72
+Hold     : 72
+
+Property : Unconstrained Output Ports
+Setup    : 4
+Hold     : 4
+
+Property : Unconstrained Output Port Paths
+Setup    : 4
+Hold     : 4
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Clock Status Summary                                                           ;
++--------------------------------------------------------------------------------+
+Target : clk
+Clock  : clk
+Type   : Base
+Status : Constrained
++--------------------------------------------------------------------------------+
+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; en         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; rst        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; cnt_out[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; cnt_out[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; cnt_out[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; cnt_out[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; en         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; rst        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; cnt_out[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; cnt_out[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; cnt_out[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; cnt_out[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Wed Dec 21 19:38:39 2022
+Info: Command: quartus_sta cnt -c cnt
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'cnt.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -3.116
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.116             -97.669 clk 
+Info (332146): Worst-case hold slack is 0.640
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.640               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -53.508 clk 
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -2.813
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.813             -87.535 clk 
+Info (332146): Worst-case hold slack is 0.591
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.591               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -53.508 clk 
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.672
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.672             -19.715 clk 
+Info (332146): Worst-case hold slack is 0.248
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.248               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -40.024 clk 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 501 megabytes
+    Info: Processing ended: Wed Dec 21 19:38:44 2022
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
+
+

@@ -1,0 +1,266 @@
+Flow report for clocked_cnt
+Sat Dec 24 00:44:30 2022
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Sat Dec 24 00:44:30 2022       ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                      ; clocked_cnt                                 ;
+; Top-level Entity Name              ; CLOCKED_CNT                                 ;
+; Family                             ; MAX 10                                      ;
+; Device                             ; 10M50DAF484C7G                              ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 126 / 49,760 ( < 1 % )                      ;
+;     Total combinational functions  ; 119 / 49,760 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 69 / 49,760 ( < 1 % )                       ;
+; Total registers                    ; 69                                          ;
+; Total pins                         ; 11 / 360 ( 3 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
+; ADC blocks                         ; 0 / 2 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 12/24/2022 00:44:07 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; clocked_cnt         ;
++-------------------+---------------------+
+
+
++--------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                               ;
++--------------------------------------------------------------------------------+
+Assignment Name : COMPILER_SIGNATURE_ID
+Value           : 233257725337358.167183904713088
+Default Value   : --
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : EDA_GENERATE_FUNCTIONAL_NETLIST
+Value           : Off
+Default Value   : --
+Entity Name     : --
+Section Id      : eda_board_design_timing
+
+Assignment Name : EDA_GENERATE_FUNCTIONAL_NETLIST
+Value           : Off
+Default Value   : --
+Entity Name     : --
+Section Id      : eda_board_design_boundary_scan
+
+Assignment Name : EDA_GENERATE_FUNCTIONAL_NETLIST
+Value           : Off
+Default Value   : --
+Entity Name     : --
+Section Id      : eda_board_design_signal_integrity
+
+Assignment Name : EDA_GENERATE_FUNCTIONAL_NETLIST
+Value           : Off
+Default Value   : --
+Entity Name     : --
+Section Id      : eda_board_design_symbol
+
+Assignment Name : EDA_OUTPUT_DATA_FORMAT
+Value           : Vhdl
+Default Value   : --
+Entity Name     : --
+Section Id      : eda_simulation
+
+Assignment Name : EDA_SIMULATION_TOOL
+Value           : ModelSim-Altera (VHDL)
+Default Value   : <None>
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : EDA_TIME_SCALE
+Value           : 1 ps
+Default Value   : --
+Entity Name     : --
+Section Id      : eda_simulation
+
+Assignment Name : MAX_CORE_JUNCTION_TEMP
+Value           : 85
+Default Value   : --
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : MIN_CORE_JUNCTION_TEMP
+Value           : 0
+Default Value   : --
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : PARTITION_COLOR
+Value           : -- (Not supported for targeted family)
+Default Value   : --
+Entity Name     : --
+Section Id      : Top
+
+Assignment Name : PARTITION_FITTER_PRESERVATION_LEVEL
+Value           : -- (Not supported for targeted family)
+Default Value   : --
+Entity Name     : --
+Section Id      : Top
+
+Assignment Name : PARTITION_NETLIST_TYPE
+Value           : -- (Not supported for targeted family)
+Default Value   : --
+Entity Name     : --
+Section Id      : Top
+
+Assignment Name : POWER_BOARD_THERMAL_MODEL
+Value           : None (CONSERVATIVE)
+Default Value   : --
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : POWER_PRESET_COOLING_SOLUTION
+Value           : 23 MM HEAT SINK WITH 200 LFPM AIRFLOW
+Default Value   : --
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : PROJECT_OUTPUT_DIRECTORY
+Value           : output_files
+Default Value   : --
+Entity Name     : --
+Section Id      : --
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                              ;
++--------------------------------------------------------------------------------+
+Module Name                        : Analysis & Synthesis
+Elapsed Time                       : 00:00:09
+Average Processors Used            : 1.0
+Peak Virtual Memory                : 420 MB
+Total CPU Time (on all processors) : 00:00:21
+
+Module Name                        : Fitter
+Elapsed Time                       : 00:00:07
+Average Processors Used            : 1.0
+Peak Virtual Memory                : 1088 MB
+Total CPU Time (on all processors) : 00:00:11
+
+Module Name                        : Assembler
+Elapsed Time                       : 00:00:03
+Average Processors Used            : 1.0
+Peak Virtual Memory                : 358 MB
+Total CPU Time (on all processors) : 00:00:02
+
+Module Name                        : Timing Analyzer
+Elapsed Time                       : 00:00:02
+Average Processors Used            : 1.1
+Peak Virtual Memory                : 504 MB
+Total CPU Time (on all processors) : 00:00:02
+
+Module Name                        : EDA Netlist Writer
+Elapsed Time                       : 00:00:00
+Average Processors Used            : 1.0
+Peak Virtual Memory                : 599 MB
+Total CPU Time (on all processors) : 00:00:00
+
+Module Name                        : Total
+Elapsed Time                       : 00:00:21
+Average Processors Used            : --
+Peak Virtual Memory                : --
+Total CPU Time (on all processors) : 00:00:36
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Flow OS Summary                                                                ;
++--------------------------------------------------------------------------------+
+Module Name      : Analysis & Synthesis
+Machine Hostname : edocit
+OS Name          : Ubuntu 22.04.1
+OS Version       : 22
+Processor type   : x86_64
+
+Module Name      : Fitter
+Machine Hostname : edocit
+OS Name          : Ubuntu 22.04.1
+OS Version       : 22
+Processor type   : x86_64
+
+Module Name      : Assembler
+Machine Hostname : edocit
+OS Name          : Ubuntu 22.04.1
+OS Version       : 22
+Processor type   : x86_64
+
+Module Name      : Timing Analyzer
+Machine Hostname : edocit
+OS Name          : Ubuntu 22.04.1
+OS Version       : 22
+Processor type   : x86_64
+
+Module Name      : EDA Netlist Writer
+Machine Hostname : edocit
+OS Name          : Ubuntu 22.04.1
+OS Version       : 22
+Processor type   : x86_64
++--------------------------------------------------------------------------------+
+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off clocked_cnt -c clocked_cnt
+quartus_fit --read_settings_files=off --write_settings_files=off clocked_cnt -c clocked_cnt
+quartus_asm --read_settings_files=off --write_settings_files=off clocked_cnt -c clocked_cnt
+quartus_sta clocked_cnt -c clocked_cnt
+quartus_eda --read_settings_files=off --write_settings_files=off clocked_cnt -c clocked_cnt
+
+
+

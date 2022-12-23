@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "cnt_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "cnt_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "en",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

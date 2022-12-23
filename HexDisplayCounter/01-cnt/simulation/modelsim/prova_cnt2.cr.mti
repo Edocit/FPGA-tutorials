@@ -1,0 +1,19 @@
+/home/edocit/Desktop/cnt/cnt.vhdl {1 {vcom -work work -2002 -explicit -stats=none /home/edocit/Desktop/cnt/cnt.vhdl
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity CNT
+-- Compiling architecture BHV of CNT
+
+} {} {}} /home/edocit/Desktop/cnt/cnt_tb.vhdl {1 {vcom -work work -2002 -explicit -stats=none /home/edocit/Desktop/cnt/cnt_tb.vhdl
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity CNT_TB
+-- Compiling architecture BHV of CNT_TB
+
+} {} {}}

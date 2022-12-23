@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Mon Dec 12 11:42:33 2022
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : hex_driver
+Top-level Entity Name : HEX_DRIVER
+Family : MAX 10
+Total logic elements : 7
+    Total combinational functions : 7
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 16
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

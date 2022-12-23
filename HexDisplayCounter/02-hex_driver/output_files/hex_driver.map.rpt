@@ -1,0 +1,543 @@
+Analysis & Synthesis report for hex_driver
+Mon Dec 12 11:42:33 2022
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Dec 12 11:42:33 2022       ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                      ; hex_driver                                  ;
+; Top-level Entity Name              ; HEX_DRIVER                                  ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 7                                           ;
+;     Total combinational functions  ; 7                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 16                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                  ;
++--------------------------------------------------------------------------------+
+Option        : Device
+Setting       : 10M50DAF484C7G
+Default Value : 
+
+Option        : Top-level entity name
+Setting       : hex_driver
+Default Value : hex_driver
+
+Option        : Family name
+Setting       : MAX 10
+Default Value : Cyclone V
+
+Option        : Maximum processors allowed for parallel compilation
+Setting       : All
+Default Value : 
+
+Option        : Use smart compilation
+Setting       : Off
+Default Value : Off
+
+Option        : Enable parallel Assembler and Timing Analyzer during compilation
+Setting       : On
+Default Value : On
+
+Option        : Enable compact report table
+Setting       : Off
+Default Value : Off
+
+Option        : Restructure Multiplexers
+Setting       : Auto
+Default Value : Auto
+
+Option        : Create Debugging Nodes for IP Cores
+Setting       : Off
+Default Value : Off
+
+Option        : Preserve fewer node names
+Setting       : On
+Default Value : On
+
+Option        : Intel FPGA IP Evaluation Mode
+Setting       : Enable
+Default Value : Enable
+
+Option        : Verilog Version
+Setting       : Verilog_2001
+Default Value : Verilog_2001
+
+Option        : VHDL Version
+Setting       : VHDL_1993
+Default Value : VHDL_1993
+
+Option        : State Machine Processing
+Setting       : Auto
+Default Value : Auto
+
+Option        : Safe State Machine
+Setting       : Off
+Default Value : Off
+
+Option        : Extract Verilog State Machines
+Setting       : On
+Default Value : On
+
+Option        : Extract VHDL State Machines
+Setting       : On
+Default Value : On
+
+Option        : Ignore Verilog initial constructs
+Setting       : Off
+Default Value : Off
+
+Option        : Iteration limit for constant Verilog loops
+Setting       : 5000
+Default Value : 5000
+
+Option        : Iteration limit for non-constant Verilog loops
+Setting       : 250
+Default Value : 250
+
+Option        : Add Pass-Through Logic to Inferred RAMs
+Setting       : On
+Default Value : On
+
+Option        : Infer RAMs from Raw Logic
+Setting       : On
+Default Value : On
+
+Option        : Parallel Synthesis
+Setting       : On
+Default Value : On
+
+Option        : DSP Block Balancing
+Setting       : Auto
+Default Value : Auto
+
+Option        : NOT Gate Push-Back
+Setting       : On
+Default Value : On
+
+Option        : Power-Up Don't Care
+Setting       : On
+Default Value : On
+
+Option        : Remove Redundant Logic Cells
+Setting       : Off
+Default Value : Off
+
+Option        : Remove Duplicate Registers
+Setting       : On
+Default Value : On
+
+Option        : Ignore CARRY Buffers
+Setting       : Off
+Default Value : Off
+
+Option        : Ignore CASCADE Buffers
+Setting       : Off
+Default Value : Off
+
+Option        : Ignore GLOBAL Buffers
+Setting       : Off
+Default Value : Off
+
+Option        : Ignore ROW GLOBAL Buffers
+Setting       : Off
+Default Value : Off
+
+Option        : Ignore LCELL Buffers
+Setting       : Off
+Default Value : Off
+
+Option        : Ignore SOFT Buffers
+Setting       : On
+Default Value : On
+
+Option        : Limit AHDL Integers to 32 Bits
+Setting       : Off
+Default Value : Off
+
+Option        : Optimization Technique
+Setting       : Balanced
+Default Value : Balanced
+
+Option        : Carry Chain Length
+Setting       : 70
+Default Value : 70
+
+Option        : Auto Carry Chains
+Setting       : On
+Default Value : On
+
+Option        : Auto Open-Drain Pins
+Setting       : On
+Default Value : On
+
+Option        : Perform WYSIWYG Primitive Resynthesis
+Setting       : Off
+Default Value : Off
+
+Option        : Auto ROM Replacement
+Setting       : On
+Default Value : On
+
+Option        : Auto RAM Replacement
+Setting       : On
+Default Value : On
+
+Option        : Auto DSP Block Replacement
+Setting       : On
+Default Value : On
+
+Option        : Auto Shift Register Replacement
+Setting       : Auto
+Default Value : Auto
+
+Option        : Allow Shift Register Merging across Hierarchies
+Setting       : Auto
+Default Value : Auto
+
+Option        : Auto Clock Enable Replacement
+Setting       : On
+Default Value : On
+
+Option        : Strict RAM Replacement
+Setting       : Off
+Default Value : Off
+
+Option        : Allow Synchronous Control Signals
+Setting       : On
+Default Value : On
+
+Option        : Force Use of Synchronous Clear Signals
+Setting       : Off
+Default Value : Off
+
+Option        : Auto RAM Block Balancing
+Setting       : On
+Default Value : On
+
+Option        : Auto RAM to Logic Cell Conversion
+Setting       : Off
+Default Value : Off
+
+Option        : Auto Resource Sharing
+Setting       : Off
+Default Value : Off
+
+Option        : Allow Any RAM Size For Recognition
+Setting       : Off
+Default Value : Off
+
+Option        : Allow Any ROM Size For Recognition
+Setting       : Off
+Default Value : Off
+
+Option        : Allow Any Shift Register Size For Recognition
+Setting       : Off
+Default Value : Off
+
+Option        : Use LogicLock Constraints during Resource Balancing
+Setting       : On
+Default Value : On
+
+Option        : Ignore translate_off and synthesis_off directives
+Setting       : Off
+Default Value : Off
+
+Option        : Timing-Driven Synthesis
+Setting       : On
+Default Value : On
+
+Option        : Report Parameter Settings
+Setting       : On
+Default Value : On
+
+Option        : Report Source Assignments
+Setting       : On
+Default Value : On
+
+Option        : Report Connectivity Checks
+Setting       : On
+Default Value : On
+
+Option        : Ignore Maximum Fan-Out Assignments
+Setting       : Off
+Default Value : Off
+
+Option        : Synchronization Register Chain Length
+Setting       : 2
+Default Value : 2
+
+Option        : Power Optimization During Synthesis
+Setting       : Normal compilation
+Default Value : Normal compilation
+
+Option        : HDL message level
+Setting       : Level2
+Default Value : Level2
+
+Option        : Suppress Register Optimization Related Messages
+Setting       : Off
+Default Value : Off
+
+Option        : Number of Removed Registers Reported in Synthesis Report
+Setting       : 5000
+Default Value : 5000
+
+Option        : Number of Swept Nodes Reported in Synthesis Report
+Setting       : 5000
+Default Value : 5000
+
+Option        : Number of Inverted Registers Reported in Synthesis Report
+Setting       : 100
+Default Value : 100
+
+Option        : Clock MUX Protection
+Setting       : On
+Default Value : On
+
+Option        : Auto Gated Clock Conversion
+Setting       : Off
+Default Value : Off
+
+Option        : Block Design Naming
+Setting       : Auto
+Default Value : Auto
+
+Option        : SDC constraint protection
+Setting       : Off
+Default Value : Off
+
+Option        : Synthesis Effort
+Setting       : Auto
+Default Value : Auto
+
+Option        : Shift Register Replacement - Allow Asynchronous Clear Signal
+Setting       : On
+Default Value : On
+
+Option        : Pre-Mapping Resynthesis Optimization
+Setting       : Off
+Default Value : Off
+
+Option        : Analysis & Synthesis Message Level
+Setting       : Medium
+Default Value : Medium
+
+Option        : Disable Register Merging Across Hierarchies
+Setting       : Auto
+Default Value : Auto
+
+Option        : Resource Aware Inference For Block RAM
+Setting       : On
+Default Value : On
++--------------------------------------------------------------------------------+
+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                         ;
++--------------------------------------------------------------------------------+
+File Name with User-Entered Path : hex_driver.vhdl
+Used in Netlist                  : yes
+File Type                        : User VHDL File 
+File Name with Absolute Path     : /home/edocit/hex_driver/hex_driver.vhdl
+Library                          : 
++--------------------------------------------------------------------------------+
+
+
+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimated Total logic elements              ; 7             ;
+;                                             ;               ;
+; Total combinational functions               ; 7             ;
+; Logic element usage by number of LUT inputs ;               ;
+;     -- 4 input functions                    ; 7             ;
+;     -- 3 input functions                    ; 0             ;
+;     -- <=2 input functions                  ; 0             ;
+;                                             ;               ;
+; Logic elements by mode                      ;               ;
+;     -- normal mode                          ; 7             ;
+;     -- arithmetic mode                      ; 0             ;
+;                                             ;               ;
+; Total registers                             ; 0             ;
+;     -- Dedicated logic registers            ; 0             ;
+;     -- I/O registers                        ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 16            ;
+;                                             ;               ;
+; Embedded Multiplier 9-bit elements          ; 0             ;
+;                                             ;               ;
+; Maximum fan-out node                        ; addr[0]~input ;
+; Maximum fan-out                             ; 7             ;
+; Total fan-out                               ; 51            ;
+; Average fan-out                             ; 1.31          ;
++---------------------------------------------+---------------+
+
+
++--------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                            ;
++--------------------------------------------------------------------------------+
+Compilation Hierarchy Node : |HEX_DRIVER
+Combinational ALUTs        : 7 (7)
+Dedicated Logic Registers  : 0 (0)
+Memory Bits                : 0
+UFM Blocks                 : 0
+DSP Elements               : 0
+DSP 9x9                    : 0
+DSP 18x18                  : 0
+Pins                       : 16
+Virtual Pins               : 0
+ADC blocks                 : 0
+Full Hierarchy Name        : |HEX_DRIVER
+Entity Name                : HEX_DRIVER
+Library Name               : work
++--------------------------------------------------------------------------------+
+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 16                          ;
+; cycloneiii_lcell_comb ; 9                           ;
+;     normal            ; 9                           ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         4 data inputs ; 7                           ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.38                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Mon Dec 12 11:42:25 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off hex_driver -c hex_driver
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file hex_driver.vhdl
+    Info (12022): Found design unit 1: HEX_DRIVER-BHV File: /home/edocit/hex_driver/hex_driver.vhdl Line: 18
+    Info (12023): Found entity 1: HEX_DRIVER File: /home/edocit/hex_driver/hex_driver.vhdl Line: 11
+Info (12127): Elaborating entity "hex_driver" for the top level hierarchy
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "dislay_v[0]" is stuck at VCC File: /home/edocit/hex_driver/hex_driver.vhdl Line: 13
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "addr[4]" File: /home/edocit/hex_driver/hex_driver.vhdl Line: 12
+    Warning (15610): No output dependent on input pin "addr[5]" File: /home/edocit/hex_driver/hex_driver.vhdl Line: 12
+    Warning (15610): No output dependent on input pin "addr[6]" File: /home/edocit/hex_driver/hex_driver.vhdl Line: 12
+    Warning (15610): No output dependent on input pin "addr[7]" File: /home/edocit/hex_driver/hex_driver.vhdl Line: 12
+Info (21057): Implemented 23 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 7 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 422 megabytes
+    Info: Processing ended: Mon Dec 12 11:42:33 2022
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:19
+
+

@@ -1,0 +1,49 @@
++--------------------------------------------------------------------------------+
+; Legal Partition Candidates                                                     ;
++--------------------------------------------------------------------------------+
+Hierarchy         : hex
+Input             : 4
+Constant Input    : 1
+Unused Input      : 0
+Floating Input    : 1
+Output            : 8
+Constant Output   : 1
+Unused Output     : 1
+Floating Output   : 1
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : cnt_0
+Input             : 3
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 4
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
+
+Hierarchy         : clk_div
+Input             : 1
+Constant Input    : 0
+Unused Input      : 0
+Floating Input    : 0
+Output            : 1
+Constant Output   : 0
+Unused Output     : 0
+Floating Output   : 0
+Bidir             : 0
+Constant Bidir    : 0
+Unused Bidir      : 0
+Input only Bidir  : 0
+Output only Bidir : 0
++--------------------------------------------------------------------------------+
+

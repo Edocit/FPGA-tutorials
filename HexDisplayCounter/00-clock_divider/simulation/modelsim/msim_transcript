@@ -1,0 +1,215 @@
+vsim -i -l msim_transcript work.clock_divider_tb
+# vsim -i -l msim_transcript work.clock_divider_tb 
+# Start time: 12:30:23 on Dec 11,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.clock_divider_tb(bhv)
+# Loading work.clock_divider(bhv)
+add wave -position end sim:/clock_divider_tb/cd/*
+run
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+add wave -position end  sim:/clock_divider_tb/d_PROCESS/t
+add wave -position end sim:/clock_divider_tb/*
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of clock_divider_tb.vhdl was successful.
+# Compile of clock_divider.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+# Ctrl+G  ==>  Goto
+# Ctrl+H  ==>  Replace
+# Ctrl+U  ==>  Delete Line
+# Ctrl+W  ==>  Add Selection To Wave
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.clock_divider_tb(bhv)
+# Loading work.clock_divider(bhv)
+run
+run
+# Compile of clock_divider_tb.vhdl was successful.
+# Compile of clock_divider.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.clock_divider_tb(bhv)
+# Loading work.clock_divider(bhv)
+run
+run
+run
+run
+run
+# Compile of clock_divider_tb.vhdl was successful.
+# Compile of clock_divider.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.clock_divider_tb(bhv)
+# Loading work.clock_divider(bhv)
+run
+run
+run
+run
+# Compile of clock_divider_tb.vhdl was successful.
+# Compile of clock_divider.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.clock_divider_tb(bhv)
+# Loading work.clock_divider(bhv)
+run
+run
+# Compile of clock_divider_tb.vhdl was successful.
+# Compile of clock_divider.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.clock_divider_tb(bhv)
+# Loading work.clock_divider(bhv)
+quit -sim
+# End time: 12:49:32 on Dec 11,2022, Elapsed time: 0:19:09
+# Errors: 0, Warnings: 1
+vsim -i -l msim_transcript work.clock_divider_tb
+# vsim -i -l msim_transcript work.clock_divider_tb 
+# Start time: 12:49:41 on Dec 11,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.clock_divider_tb(bhv)
+# Loading work.clock_divider(bhv)
+add wave -position end sim:/clock_divider_tb/*
+add wave -position end sim:/clock_divider_tb/cd/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 12:50:43 on Dec 11,2022, Elapsed time: 0:01:02
+# Errors: 0, Warnings: 1
+# Compile of clock_divider_tb.vhdl was successful.
+# Compile of clock_divider.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -i -l msim_transcript work.clock_divider_tb
+# vsim -i -l msim_transcript work.clock_divider_tb 
+# Start time: 12:51:13 on Dec 11,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.clock_divider_tb(bhv)
+# Loading work.clock_divider(bhv)
+add wave -position end sim:/clock_divider_tb/*
+add wave -position end sim:/clock_divider_tb/cd/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of clock_divider_tb.vhdl was successful.
+# Compile of clock_divider.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.clock_divider_tb(bhv)
+# Loading work.clock_divider(bhv)
+run
+run
+# Compile of clock_divider_tb.vhdl was successful.
+# Compile of clock_divider.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.clock_divider_tb(bhv)
+# Loading work.clock_divider(bhv)
+run
+run
+# Compile of clock_divider_tb.vhdl was successful.
+# Compile of clock_divider.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.clock_divider_tb(bhv)
+# Loading work.clock_divider(bhv)
+run
+run
+# Compile of clock_divider_tb.vhdl was successful.
+# Compile of clock_divider.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.clock_divider_tb(bhv)
+# Loading work.clock_divider(bhv)
+run
+run
+run
+# End time: 13:04:27 on Dec 11,2022, Elapsed time: 0:13:14
+# Errors: 0, Warnings: 1

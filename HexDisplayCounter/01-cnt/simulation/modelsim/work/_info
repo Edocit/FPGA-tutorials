@@ -1,0 +1,97 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/edocit/Desktop/cnt/simulation/modelsim
+Ecnt
+Z1 w1671647845
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 7
+R0
+Z5 8/home/edocit/Desktop/cnt/cnt.vhdl
+Z6 F/home/edocit/Desktop/cnt/cnt.vhdl
+l0
+L9 1
+VCN^Y1D:CQlRZJb2PhJO7n3
+!s100 0^GB7=8T1dKCM3NP85Q8V0
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1671648029
+!i10b 1
+Z9 !s108 1671648029.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/edocit/Desktop/cnt/cnt.vhdl|
+!s107 /home/edocit/Desktop/cnt/cnt.vhdl|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Abhv
+R2
+R3
+R4
+Z13 DEx4 work 3 cnt 0 22 CN^Y1D:CQlRZJb2PhJO7n3
+!i122 7
+l22
+L18 25
+VNaf?1J2<fSYLHlTlH?OA53
+!s100 z`NJE6X2TCm;`=0B4Sll:0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+Z14 !s107 /home/edocit/Desktop/cnt/cnt.vhdl|
+!i113 1
+R11
+R12
+Ecnt_tb
+Z15 w1671646977
+R2
+R3
+R4
+!i122 6
+R0
+Z16 8/home/edocit/Desktop/cnt/cnt_tb.vhdl
+Z17 F/home/edocit/Desktop/cnt/cnt_tb.vhdl
+l0
+L9 1
+VKWmWKI`COZ37=EN2hC6MS1
+!s100 S`3RCZnZ_@z1n<WE1iT]L2
+R7
+32
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/edocit/Desktop/cnt/cnt_tb.vhdl|
+Z19 !s107 /home/edocit/Desktop/cnt/cnt_tb.vhdl|
+!i113 1
+R11
+R12
+Abhv
+R2
+R3
+R4
+DEx4 work 6 cnt_tb 0 22 KWmWKI`COZ37=EN2hC6MS1
+!i122 6
+l45
+L15 60
+VKH3P6[9aBmRfQACi<PDW[1
+!s100 ?HhnSXb84RZLUOGgMb@IW0
+R7
+32
+R8
+!i10b 1
+R9
+R18
+R19
+!i113 1
+R11
+R12

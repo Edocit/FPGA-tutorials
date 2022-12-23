@@ -1,0 +1,44 @@
+
+
+LIBRARY IEEE;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+  
+
+  
+ENTITY CLOCK_DIVIDER IS
+	PORT( clk_in: 	IN  std_logic;
+			clk_out: OUT std_logic
+		  );			
+END CLOCK_DIVIDER;
+
+
+ARCHITECTURE BHV OF CLOCK_DIVIDER IS 
+	SIGNAL   div     : INTEGER := 2;
+	SIGNAL   cnt_int : STD_LOGIC_VECTOR(7 DOWNTO 0) := (others => '0');
+
+	BEGIN
+		clk_process : process(clk_in)
+				BEGIN
+					IF(rising_edge(clk_in)) THEN
+						IF(TO_INTEGER(UNSIGNED(cnt_int)) = (div - 1)) THEN
+							clk_out <= '1';
+						ELSE
+							clk_out <= '0';
+						END IF;
+						
+						IF(TO_INTEGER(UNSIGNED(cnt_int)) = div) THEN 
+							cnt_int <= "00000000";
+						END IF;
+					END IF;
+				END PROCESS;
+END BHV;
+
+
+
+
+
+
+
+
+

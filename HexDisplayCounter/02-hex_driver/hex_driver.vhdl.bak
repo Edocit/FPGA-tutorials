@@ -1,0 +1,46 @@
+
+
+
+
+LIBRARY IEEE;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+  
+
+  
+ENTITY HEX_DRIVER IS
+	PORT( addr: 		IN  std_logic_vector(7 DOWNTO 0);
+			dislay_v: 	OUT std_logic_vector(7 DOWNTO 0)
+		  );			
+END HEX_DRIVER;
+
+
+ARCHITECTURE BHV OF HEX_DRIVER IS 
+	TYPE display_lut IS ARRAY(0 to 15) OF std_logic_vector(7 DOWNTO 0);
+	SIGNAL hex_val : display_lut;
+	
+	BEGIN
+		hex_val(0)  <= "11000000";  --0
+		hex_val(1)  <= "01100000";  --1 
+		hex_val(2)  <= "11011000";  --2 
+		hex_val(3)  <= "11110010";  --3 
+		hex_val(4)  <= "01100110";  --4 
+		hex_val(5)  <= "10110110";  --5 
+		hex_val(6)  <= "10111110";  --6 
+		hex_val(7)  <= "11100000";  --7 
+		hex_val(8)  <= "11111110";  --8 
+		hex_val(9)  <= "11110110";  --9 
+		hex_val(10) <= "11101110";  --A 
+		hex_val(11) <= "00111110";  --b 
+		hex_val(12) <= "10011110";  --C 
+		hex_val(13) <= "01111010";  --d 
+		hex_val(14) <= "10011110";  --E 
+		hex_val(15) <= "10001110";  --F 
+	
+
+		dislay_v <= hex_val(TO_INTEGER(UNSIGNED(addr)));
+		
+	
+	
+	
+END BHV;

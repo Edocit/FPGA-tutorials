@@ -1,0 +1,18 @@
+Fitter Status : Successful - Sat Dec 24 00:44:23 2022
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : clocked_cnt
+Top-level Entity Name : CLOCKED_CNT
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 126 / 49,760 ( < 1 % )
+    Total combinational functions : 119 / 49,760 ( < 1 % )
+    Dedicated logic registers : 69 / 49,760 ( < 1 % )
+Total registers : 69
+Total pins : 11 / 360 ( 3 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,677,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )

@@ -1,0 +1,217 @@
+Flow report for hex_driver
+Mon Dec 12 11:42:44 2022
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Mon Dec 12 11:42:42 2022       ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                      ; hex_driver                                  ;
+; Top-level Entity Name              ; HEX_DRIVER                                  ;
+; Family                             ; MAX 10                                      ;
+; Device                             ; 10M50DAF484C7G                              ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 8 / 49,760 ( < 1 % )                        ;
+;     Total combinational functions  ; 8 / 49,760 ( < 1 % )                        ;
+;     Dedicated logic registers      ; 0 / 49,760 ( 0 % )                          ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 16 / 360 ( 4 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
+; ADC blocks                         ; 0 / 2 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 12/12/2022 11:42:25 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; hex_driver          ;
++-------------------+---------------------+
+
+
++--------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                               ;
++--------------------------------------------------------------------------------+
+Assignment Name : COMPILER_SIGNATURE_ID
+Value           : 233257725337358.167084174500048
+Default Value   : --
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : MAX_CORE_JUNCTION_TEMP
+Value           : 85
+Default Value   : --
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : MIN_CORE_JUNCTION_TEMP
+Value           : 0
+Default Value   : --
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : NUM_PARALLEL_PROCESSORS
+Value           : All
+Default Value   : --
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : PARTITION_COLOR
+Value           : -- (Not supported for targeted family)
+Default Value   : --
+Entity Name     : --
+Section Id      : Top
+
+Assignment Name : PARTITION_FITTER_PRESERVATION_LEVEL
+Value           : -- (Not supported for targeted family)
+Default Value   : --
+Entity Name     : --
+Section Id      : Top
+
+Assignment Name : PARTITION_NETLIST_TYPE
+Value           : -- (Not supported for targeted family)
+Default Value   : --
+Entity Name     : --
+Section Id      : Top
+
+Assignment Name : POWER_BOARD_THERMAL_MODEL
+Value           : None (CONSERVATIVE)
+Default Value   : --
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : POWER_PRESET_COOLING_SOLUTION
+Value           : 23 MM HEAT SINK WITH 200 LFPM AIRFLOW
+Default Value   : --
+Entity Name     : --
+Section Id      : --
+
+Assignment Name : PROJECT_OUTPUT_DIRECTORY
+Value           : output_files
+Default Value   : --
+Entity Name     : --
+Section Id      : --
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                              ;
++--------------------------------------------------------------------------------+
+Module Name                        : Analysis & Synthesis
+Elapsed Time                       : 00:00:08
+Average Processors Used            : 1.0
+Peak Virtual Memory                : 422 MB
+Total CPU Time (on all processors) : 00:00:19
+
+Module Name                        : Fitter
+Elapsed Time                       : 00:00:06
+Average Processors Used            : 1.0
+Peak Virtual Memory                : 1087 MB
+Total CPU Time (on all processors) : 00:00:09
+
+Module Name                        : Assembler
+Elapsed Time                       : 00:00:02
+Average Processors Used            : 1.0
+Peak Virtual Memory                : 358 MB
+Total CPU Time (on all processors) : 00:00:02
+
+Module Name                        : Timing Analyzer
+Elapsed Time                       : 00:00:02
+Average Processors Used            : 1.0
+Peak Virtual Memory                : 505 MB
+Total CPU Time (on all processors) : 00:00:02
+
+Module Name                        : Total
+Elapsed Time                       : 00:00:18
+Average Processors Used            : --
+Peak Virtual Memory                : --
+Total CPU Time (on all processors) : 00:00:32
++--------------------------------------------------------------------------------+
+
+
+
++--------------------------------------------------------------------------------+
+; Flow OS Summary                                                                ;
++--------------------------------------------------------------------------------+
+Module Name      : Analysis & Synthesis
+Machine Hostname : edocit
+OS Name          : Ubuntu 22.04.1
+OS Version       : 22
+Processor type   : x86_64
+
+Module Name      : Fitter
+Machine Hostname : edocit
+OS Name          : Ubuntu 22.04.1
+OS Version       : 22
+Processor type   : x86_64
+
+Module Name      : Assembler
+Machine Hostname : edocit
+OS Name          : Ubuntu 22.04.1
+OS Version       : 22
+Processor type   : x86_64
+
+Module Name      : Timing Analyzer
+Machine Hostname : edocit
+OS Name          : Ubuntu 22.04.1
+OS Version       : 22
+Processor type   : x86_64
++--------------------------------------------------------------------------------+
+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off hex_driver -c hex_driver
+quartus_fit --read_settings_files=off --write_settings_files=off hex_driver -c hex_driver
+quartus_asm --read_settings_files=off --write_settings_files=off hex_driver -c hex_driver
+quartus_sta hex_driver -c hex_driver
+
+
+
