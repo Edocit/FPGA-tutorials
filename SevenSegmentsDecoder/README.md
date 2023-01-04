@@ -1,15 +1,19 @@
 
 # Hex Counter Display
 
-In this episode the description of how a counter con be istantiated on the real FPGA (not only modelsim simulation) in order to use the physical resources of the Altera FPGA. In my case I deployed on the Terasic DE10-Lite, which is the reference board for these class.
+In this episode we implemented a 7-segments display decoder using logic gates for a possible discrete integrated circuits (ICs) implementation. In my case I deployed on the Terasic DE10-Lite, which is the reference board for these class.
 
 
 # Component architecture
 <p align="center">
-  <img src="seven_seg_dec.jpg" width="800" title="Component architecture">
+  <img src="seven_seg_dec.png" width="800" title="Component architecture">
 </p>
-The figure above represents the high-level view of the schematic of the final component you can find in the 03-clocked_cnt directory. <br />
-The component is built using 3 lower-level entities, represented in yellow in the figure above. For each building block you can find the implementation and the relative testbench on the dedicated directories, whose names are numbered indicating the implementation sequence in a bottom-up fashion. <br />  <br />
+The figure above represents the schematic of the decoder we obtained from logic equations derived by Karnaugh maps. <br />
+For every output, which are represented by the 7 segments of the display, we encoded the logic function implementing its truth table as can be seen in the Altera .bdf file where I highlighted every contribution of each logic function (the picture below). <br />  <br />
+
+<p align="center">
+  <img src="seven_seg_dec.png" width="800" title="Component architecture">
+</p>
 
 In particular we have:
 
