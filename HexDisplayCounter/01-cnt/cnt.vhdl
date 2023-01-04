@@ -28,7 +28,7 @@ ARCHITECTURE BHV OF CNT IS
 						ELSIF(rst = '0' AND en = '1') THEN
 							cnt_out <= std_logic_vector(to_unsigned(cnt_int,4));
 							
-							IF(cnt_int < 16) THEN
+							IF(cnt_int < 15) THEN
 								cnt_int <= cnt_int + 1;
 							ELSE 
 								cnt_int <= 0;
